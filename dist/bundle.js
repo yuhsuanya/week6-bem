@@ -86,6 +86,28 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./assets/css/normalize.css":
+/*!**********************************!*\
+  !*** ./assets/css/normalize.css ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("// removed by extract-text-webpack-plugin\n\n//# sourceURL=webpack:///./assets/css/normalize.css?");
+
+/***/ }),
+
+/***/ "./assets/css/style.css":
+/*!******************************!*\
+  !*** ./assets/css/style.css ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("throw new Error(\"Module build failed (from ./node_modules/extract-text-webpack-plugin/dist/loader.js):\\nModuleParseError: Module parse failed: Identifier directly after number (1:1)\\nYou may need an appropriate loader to handle this file type.\\n(Source code omitted for this binary file)\\n    at handleParseError (C:\\\\Users\\\\sherry\\\\Desktop\\\\week6-bem\\\\node_modules\\\\webpack\\\\lib\\\\NormalModule.js:447:19)\\n    at doBuild.err (C:\\\\Users\\\\sherry\\\\Desktop\\\\week6-bem\\\\node_modules\\\\webpack\\\\lib\\\\NormalModule.js:481:5)\\n    at runLoaders (C:\\\\Users\\\\sherry\\\\Desktop\\\\week6-bem\\\\node_modules\\\\webpack\\\\lib\\\\NormalModule.js:342:12)\\n    at C:\\\\Users\\\\sherry\\\\Desktop\\\\week6-bem\\\\node_modules\\\\loader-runner\\\\lib\\\\LoaderRunner.js:373:3\\n    at iterateNormalLoaders (C:\\\\Users\\\\sherry\\\\Desktop\\\\week6-bem\\\\node_modules\\\\loader-runner\\\\lib\\\\LoaderRunner.js:214:10)\\n    at C:\\\\Users\\\\sherry\\\\Desktop\\\\week6-bem\\\\node_modules\\\\loader-runner\\\\lib\\\\LoaderRunner.js:205:4\\n    at process.nextTick (C:\\\\Users\\\\sherry\\\\Desktop\\\\week6-bem\\\\node_modules\\\\enhanced-resolve\\\\lib\\\\CachedInputFileSystem.js:73:15)\\n    at process._tickCallback (internal/process/next_tick.js:61:11)\");\n\n//# sourceURL=webpack:///./assets/css/style.css?");
+
+/***/ }),
+
 /***/ "./assets/images/bird.jpg":
 /*!********************************!*\
   !*** ./assets/images/bird.jpg ***!
@@ -116,7 +138,7 @@ eval("module.exports = __webpack_require__.p + \"images/368d4517dbe9eaf22afed45d
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _images_bird_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../images/bird.jpg */ \"./assets/images/bird.jpg\");\n/* harmony import */ var _images_bird_jpg__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_images_bird_jpg__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _images_squirrel_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../images/squirrel.jpg */ \"./assets/images/squirrel.jpg\");\n/* harmony import */ var _images_squirrel_jpg__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_images_squirrel_jpg__WEBPACK_IMPORTED_MODULE_2__);\n\n\n\njquery__WEBPACK_IMPORTED_MODULE_0___default()('#image__bird').attr(\"src\", _images_bird_jpg__WEBPACK_IMPORTED_MODULE_1___default.a);\njquery__WEBPACK_IMPORTED_MODULE_0___default()('#image__squirrel').attr(\"src\", _images_squirrel_jpg__WEBPACK_IMPORTED_MODULE_2___default.a);\njquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {\n  // when a hanburger menu is clicked\n  var $ul = jquery__WEBPACK_IMPORTED_MODULE_0___default()(\".nav__list\"),\n      $menu = jquery__WEBPACK_IMPORTED_MODULE_0___default()(\".nav__menu\");\n  jquery__WEBPACK_IMPORTED_MODULE_0___default()($menu).click(function () {\n    // toggle menu-click Class\n    $ul.toggleClass(\"menu-click\");\n  }); // end click event handler\n});\n\n//# sourceURL=webpack:///./assets/js/script.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _images_bird_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../images/bird.jpg */ \"./assets/images/bird.jpg\");\n/* harmony import */ var _images_bird_jpg__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_images_bird_jpg__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _images_squirrel_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../images/squirrel.jpg */ \"./assets/images/squirrel.jpg\");\n/* harmony import */ var _images_squirrel_jpg__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_images_squirrel_jpg__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _css_normalize_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../css/normalize.css */ \"./assets/css/normalize.css\");\n/* harmony import */ var _css_normalize_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_css_normalize_css__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../css/style.css */ \"./assets/css/style.css\");\n/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_css_style_css__WEBPACK_IMPORTED_MODULE_4__);\n\n\n\n\n\njquery__WEBPACK_IMPORTED_MODULE_0___default()('#image__bird').attr(\"src\", _images_bird_jpg__WEBPACK_IMPORTED_MODULE_1___default.a);\njquery__WEBPACK_IMPORTED_MODULE_0___default()('#image__squirrel').attr(\"src\", _images_squirrel_jpg__WEBPACK_IMPORTED_MODULE_2___default.a);\njquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {\n  // when a hanburger menu is clicked\n  var $ul = jquery__WEBPACK_IMPORTED_MODULE_0___default()(\".nav__list\"),\n      $menu = jquery__WEBPACK_IMPORTED_MODULE_0___default()(\".nav__menu\");\n  jquery__WEBPACK_IMPORTED_MODULE_0___default()($menu).click(function () {\n    // toggle menu-click Class\n    $ul.toggleClass(\"menu-click\");\n  }); // end click event handler\n});\n\n//# sourceURL=webpack:///./assets/js/script.js?");
 
 /***/ }),
 
