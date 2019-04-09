@@ -9,7 +9,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
     filename:'bundle.[chunkhash].js'
     },
     module:{
-        rules:[{
+        rule:[{
             test:/\.(js)$/,
             exclude:/(node_modules)/,
             use:{
@@ -26,36 +26,30 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
             loader:'url-loader',
             options:{
                 limit:1000,
-                outputPath:'./images'
+                outputPath:'./image'
             }
                 },
                 'image-webpack-loader'
             ]
         },
         {
-            test: /\.(png|woff|woff2|eot|ttf|svg)$/,
-            use:{
-               loader:'file-loader',
-               options:{
-                   outputpath:'css/fonts',
-                   name:'[name].[ext]',
-               },
-
-            }
-        },
-        {
+           test: /\.css$/,
            use: ExtractTextPlugin.extract({
-                          use: 'css-loader'
-                       }),
-                       // use: ['style-loader', 'css-loader'],
-                    test: /\.css$/
+                              use: [{
+                loader:'css-loader',
+                options:{
+                      url:false
+                }
+            },
+            {
+                loader:'postcss-losder'
+            }]
+                       })
         }	
-    ]
-         },
-        plugins: [
-            new ExtractTextPlugin('./css/style.css'),
-            new HtmlWebpackPlugin({
-            template:'assets/index.html',
-            })
+               ]
+        },
+       plugins: [
+              new ExtractTextPlugin('./css/style.css')
         ]
-   }
+          };
+   
