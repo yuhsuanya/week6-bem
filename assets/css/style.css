@@ -1,8 +1,9 @@
-@import"normalize.css";
 
+@import"normalize.css";
+@import"base/_mixins.css";
 @import"base/_fonts.css";
 @import"base/_global.css";
-@import"base/_mixins.css";
+
 
 @import"modules/_container.css";
 @import"modules/_footer.css";
