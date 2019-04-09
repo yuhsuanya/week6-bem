@@ -17,6 +17,20 @@ let path = require('path');
                 presets:['@babel/preset-env']
             }
             }
-        }]
+        },
+        {
+            test: /\.(jpe?g|png|gif|svg)$/,
+            use:[
+                {
+            loader:'url-loader',
+            options:{
+                limit:1000,
+                outputPath:'./images'
+            }
+                },
+                'image-webpack-loader'
+            ]
+        }
+    ]
          }
    }
