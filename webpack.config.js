@@ -33,6 +33,17 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
             ]
         },
         {
+            test: /\.(png|woff|woff2|eot|ttf|svg)$/,
+            use:{
+               loader:'file-loader',
+               options:{
+                   outputpath:'css/fonts',
+                   name:'[name].[ext]',
+               },
+
+            }
+        },
+        {
            use: ExtractTextPlugin.extract({
                           use: 'css-loader'
                        }),
